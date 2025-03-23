@@ -35,6 +35,11 @@ jobs:
           # If using the 'assets' git submodule from Chirpy Starter, uncomment above
           # (See: https://github.com/cotes2020/chirpy-starter/tree/main/assets)
 
+      - name: Install Ruby
+        run: |
+          sudo apt update
+          sudo apt install -y ruby-full
+
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v4
